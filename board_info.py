@@ -47,6 +47,7 @@ yellow_button.switch_to_input(pull=digitalio.Pull.UP)
 red_button = digitalio.DigitalInOut(board.GP15)
 red_button.switch_to_input(pull=digitalio.Pull.UP)
 
+
 while red_button.value:
     print(yellow_button.value)
     time.sleep(0.5)
